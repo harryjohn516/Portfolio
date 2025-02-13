@@ -1,20 +1,21 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import myImg from "../../Assets/Logo.gif";
+
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  // AiFillGithub,
+  // AiOutlineTwitter,
+  // AiFillInstagram,
+  AiFillSkype,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaDiscord, FaTelegram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={12} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
@@ -24,7 +25,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C++, Javascript, Java, C#, Python, Solidity, Rust and Go. </b>
               </i>
               <br />
               <br />
@@ -48,14 +49,9 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js, Vue.js, Angular and Next.js</b>
               </i>
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
           </Col>
         </Row>
         <Row>
@@ -67,42 +63,46 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="mailto:harryjohn5093421@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  title="harryjohn5093421@gmail.com"
                 >
-                  <AiFillGithub />
+                  <FaEnvelope />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://t.me/devgenius1989"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  title="devgenius1989"
                 >
-                  <AiOutlineTwitter />
+                  <FaTelegram />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href={`skype:${`live:.cid.ac4f5f3a2fa956e5`}?chat`}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  title="live:.cid.ac4f5f3a2fa956e5"
                 >
-                  <AiFillInstagram />
+                  <AiFillSkype />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://discord.com/users/harryjohn5093421"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="harryjohn5093421"
+                >
+                  <FaDiscord />
                 </a>
               </li>
             </ul>
