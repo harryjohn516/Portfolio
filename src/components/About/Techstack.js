@@ -106,6 +106,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiThreedotjs />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAndroid />
+      </Col>
     </Row>
   );
 }
