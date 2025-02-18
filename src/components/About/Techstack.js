@@ -104,7 +104,7 @@ function Techstack() {
         <SiDotnet />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAndroid />
+        <SiThreedotjs />
       </Col>
     </Row>
   );
