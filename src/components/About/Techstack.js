@@ -27,6 +27,7 @@ import {
   SiCsharp,
   SiDotnet,
   SiRubyonrails,
+  SiThreedotjs
 } from "react-icons/si";
 
 function Techstack() {
